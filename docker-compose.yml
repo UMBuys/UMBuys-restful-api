@@ -4,6 +4,7 @@ services:
   web:
     build: .
     command: python src/UMBuys/manage.py runserver 0.0.0.0:8000
+    # command: python test.py
     volumes:
       - .:/code
     ports:
